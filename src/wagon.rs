@@ -28,7 +28,7 @@ pub enum Cargo {
 pub fn weight(cargo: Cargo) -> u32 {
     match cargo {
         Cargo::Flour(pounds) => pounds,
-        Cargo::Bullets(boxes) => boxes * 3,
+        Cargo::Bullets(boxes) => boxes * 2,
         Cargo::Oxen(_) => 0,
     }
 }
