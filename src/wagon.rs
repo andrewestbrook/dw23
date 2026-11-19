@@ -50,7 +50,7 @@ pub fn weight(cargo: Cargo) -> u32 {
 /// ```
 pub fn total_weight(load: &[Cargo]) -> u32 {
     let mut total = 0;
-    for i in 0..load.len() - 1 {
+    for i in 0..load.len() {
         total += weight(load[i]);
     }
     total
