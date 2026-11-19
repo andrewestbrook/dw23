@@ -65,5 +65,5 @@ pub fn total_weight(load: &[Cargo]) -> u32 {
 /// assert!(is_overloaded(2001));
 /// ```
 pub fn is_overloaded(total: u32) -> bool {
-    total >= CAPACITY
+    total > CAPACITY
 }
